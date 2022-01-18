@@ -7,12 +7,12 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Configuration;
 using System.Text;
 using System.Threading.Tasks;
-using System.Net.Mail;
-using Experimental.System.Messaging;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using StackExchange.Redis;
+using Experimental.System.Messaging;
+using System.Net.Mail;
 
 namespace RepositoryLayer.Repository
 {
@@ -23,21 +23,21 @@ namespace RepositoryLayer.Repository
         private readonly IConfiguration configuration;
 
         public UserRepository(IDBSetting db, IConfiguration configuration)
-            {
+        {
             this.configuration = configuration;
             var userclient = new MongoClient(db.ConnectionString);
             var database = userclient.GetDatabase(db.DatabaseName);
             User = database.GetCollection<RegisterModel>("User");
-            }
+        }
         public async Task<RegisterModel> Register(RegisterModel register)
         {
             try
             {
-                var check = await this.User.AsQueryable().Where(x => x.emailID == register.emailID).FirstOrDefaultAsync();
-                if (check != null)
+                var check = await this.User.AsQueryable().Where(x => x.emailID == register.emailID).SingleOrDefaultAsync();
+                if (check == null)
                 {
                     await this.User.InsertOneAsync(register);
-                    return check;
+                    return register;
 
                 }
                 return null;
@@ -53,10 +53,10 @@ namespace RepositoryLayer.Repository
         {
             try
             {
-                var check = await this.User.Find(x => x.emailID == login.emailID).FirstOrDefaultAsync();
+                var check = await this.User.AsQueryable().Where(x => x.emailID == login.emailID).FirstOrDefaultAsync();
                 if (check != null)
                 {
-                    check = await this.User.Find(x => x.password == login.password).FirstOrDefaultAsync();
+                    check = await this.User.AsQueryable().Where(x => x.password == login.password).FirstOrDefaultAsync();
                     if (check != null)
                     {
                         ConnectionMultiplexer connectionMultiplexer = ConnectionMultiplexer.Connect("127.0.0.1:6379");
@@ -147,7 +147,7 @@ namespace RepositoryLayer.Repository
                 if (check != null)
                 {
                     await this.User.UpdateOneAsync(x => x.emailID == reset.emailID,
-                        Builders<RegisterModel>.Update.Set(x => x.password, reset.password)); 
+                        Builders<RegisterModel>.Update.Set(x => x.password, reset.newpassword)); 
                     return check;
 
                 }

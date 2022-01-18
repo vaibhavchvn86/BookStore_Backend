@@ -64,7 +64,7 @@ namespace BookStore.Controller
                     IDatabase database = connectionMultiplexer.GetDatabase();
                     string fullName = database.StringGet("FullName");
                     string email = database.StringGet("Email");
-                    double mobile = (double)database.StringGet("Mobile");
+                    string mobile = database.StringGet("Mobile");
                     string userId = database.StringGet("UserId");
 
                     RegisterModel data = new RegisterModel

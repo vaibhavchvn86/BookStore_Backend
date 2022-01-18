@@ -57,7 +57,7 @@ namespace ManagerLayer.Manager
 
         public async Task<RegisterModel> Reset(ResetModel reset)
         {
-            reset.password = EncodePasswordToBase64(reset.password);
+            reset.newpassword = EncodePasswordToBase64(reset.newpassword);
             try
             {
                 return await this.repo.Reset(reset);
