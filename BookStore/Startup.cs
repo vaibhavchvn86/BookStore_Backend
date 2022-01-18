@@ -45,7 +45,7 @@ namespace BookStore
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1.0", new OpenApiInfo { Title = "FundooNotes", Description = "Testing FundooNotes", Version = "1.0" });
+                c.SwaggerDoc("v1.0", new OpenApiInfo { Title = "BookStore", Description = "Testing BookStore", Version = "1.0" });
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
                     Name = "Authorization",
@@ -119,7 +119,7 @@ namespace BookStore
 
                 app.UseAuthentication();
 
-                //app.UseAuthorization();
+                app.UseAuthorization();
 
                 app.UseEndpoints(endpoints =>
                 {

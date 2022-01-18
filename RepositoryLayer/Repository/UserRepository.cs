@@ -33,11 +33,11 @@ namespace RepositoryLayer.Repository
         {
             try
             {
-                var check = await this.User.AsQueryable().Where(x => x.emailID == register.emailID).FirstOrDefaultAsync();
-                if (check != null)
+                var check = await this.User.Find(x => x.emailID == register.emailID).SingleOrDefaultAsync();
+                if (check == null)
                 {
                     await this.User.InsertOneAsync(register);
-                    return check;
+                    return register;
 
                 }
                 return null;

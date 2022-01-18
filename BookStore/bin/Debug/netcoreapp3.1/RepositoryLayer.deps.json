@@ -15,6 +15,7 @@
           "Microsoft.IdentityModel.Tokens": "6.15.0",
           "ModelLayer": "1.0.0",
           "MongoDB.Driver": "2.14.1",
+          "StackExchange.Redis": "2.2.88",
           "System.Configuration.ConfigurationManager": "6.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.15.0"
         },
@@ -195,7 +196,7 @@
           }
         }
       },
-      "Microsoft.NETCore.Platforms/2.0.0": {},
+      "Microsoft.NETCore.Platforms/5.0.0": {},
       "Microsoft.Win32.Registry/5.0.0": {
         "dependencies": {
           "System.Security.AccessControl": "6.0.0",
@@ -348,6 +349,17 @@
           }
         }
       },
+      "Pipelines.Sockets.Unofficial/2.2.0": {
+        "dependencies": {
+          "System.IO.Pipelines": "5.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Pipelines.Sockets.Unofficial.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "2.2.0.45337"
+          }
+        }
+      },
       "Portable.BouncyCastle/1.9.0": {
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
@@ -364,6 +376,18 @@
           }
         }
       },
+      "StackExchange.Redis/2.2.88": {
+        "dependencies": {
+          "Pipelines.Sockets.Unofficial": "2.2.0",
+          "System.Diagnostics.PerformanceCounter": "5.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/StackExchange.Redis.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.2.88.56325"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {},
       "System.Configuration.ConfigurationManager/6.0.0": {
         "dependencies": {
@@ -374,6 +398,28 @@
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "System.Diagnostics.PerformanceCounter/5.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0",
+          "Microsoft.Win32.Registry": "5.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
           }
         }
       },
@@ -423,6 +469,14 @@
           "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
             "assemblyVersion": "6.15.0.0",
             "fileVersion": "6.15.0.21202"
+          }
+        }
+      },
+      "System.IO.Pipelines/5.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
           }
         }
       },
@@ -562,7 +616,7 @@
       },
       "System.Text.Encoding.CodePages/4.4.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0"
+          "Microsoft.NETCore.Platforms": "5.0.0"
         }
       },
       "System.Windows.Extensions/6.0.0": {
@@ -720,12 +774,12 @@
       "path": "microsoft.identitymodel.tokens/6.15.0",
       "hashPath": "microsoft.identitymodel.tokens.6.15.0.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/2.0.0": {
+    "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
-      "path": "microsoft.netcore.platforms/2.0.0",
-      "hashPath": "microsoft.netcore.platforms.2.0.0.nupkg.sha512"
+      "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
     },
     "Microsoft.Win32.Registry/5.0.0": {
       "type": "package",
@@ -776,6 +830,13 @@
       "path": "mongodb.libmongocrypt/1.3.0",
       "hashPath": "mongodb.libmongocrypt.1.3.0.nupkg.sha512"
     },
+    "Pipelines.Sockets.Unofficial/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7hzHplEIVOGBl5zOQZGX/DiJDHjq+RVRVrYgDiqXb6RriqWAdacXxp+XO9WSrATCEXyNOUOQg9aqQArsjase/A==",
+      "path": "pipelines.sockets.unofficial/2.2.0",
+      "hashPath": "pipelines.sockets.unofficial.2.2.0.nupkg.sha512"
+    },
     "Portable.BouncyCastle/1.9.0": {
       "type": "package",
       "serviceable": true,
@@ -790,6 +851,13 @@
       "path": "sharpcompress/0.30.1",
       "hashPath": "sharpcompress.0.30.1.nupkg.sha512"
     },
+    "StackExchange.Redis/2.2.88": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JJi1jcO3/ZiamBhlsC/TR8aZmYf+nqpGzMi0HRRCy5wJkUPmMnRp0kBA6V84uhU8b531FHSdTDaFCAyCUJomjA==",
+      "path": "stackexchange.redis/2.2.88",
+      "hashPath": "stackexchange.redis.2.2.88.nupkg.sha512"
+    },
     "System.Buffers/4.5.1": {
       "type": "package",
       "serviceable": true,
@@ -803,6 +871,13 @@
       "sha512": "sha512-7T+m0kDSlIPTHIkPMIu6m6tV6qsMqJpvQWW2jIc2qi7sn40qxFo0q+7mEQAhMPXZHMKnWrnv47ntGlM/ejvw3g==",
       "path": "system.configuration.configurationmanager/6.0.0",
       "hashPath": "system.configuration.configurationmanager.6.0.0.nupkg.sha512"
+    },
+    "System.Diagnostics.PerformanceCounter/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kcQWWtGVC3MWMNXdMDWfrmIlFZZ2OdoeT6pSNVRtk9+Sa7jwdPiMlNwb0ZQcS7NRlT92pCfmjRtkSWUW3RAKwg==",
+      "path": "system.diagnostics.performancecounter/5.0.0",
+      "hashPath": "system.diagnostics.performancecounter.5.0.0.nupkg.sha512"
     },
     "System.Drawing.Common/6.0.0": {
       "type": "package",
@@ -824,6 +899,13 @@
       "sha512": "sha512-lzJaeRZE4dvPmH9U65J8z9wsrWghlosNYEqwCTjOh5o/gCHHcTV6P6EcYj7xC22AHPYavYh8IUtIqH5MszW1rA==",
       "path": "system.identitymodel.tokens.jwt/6.15.0",
       "hashPath": "system.identitymodel.tokens.jwt.6.15.0.nupkg.sha512"
+    },
+    "System.IO.Pipelines/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-irMYm3vhVgRsYvHTU5b2gsT2CwT/SMM6LZFzuJjpIvT5Z4CshxNsaoBC1X/LltwuR3Opp8d6jOS/60WwOb7Q2Q==",
+      "path": "system.io.pipelines/5.0.0",
+      "hashPath": "system.io.pipelines.5.0.0.nupkg.sha512"
     },
     "System.Memory/4.5.4": {
       "type": "package",
