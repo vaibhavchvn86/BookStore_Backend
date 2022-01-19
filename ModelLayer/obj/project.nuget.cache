@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "w4SAUE0JdwInCkiuOMUndX/74VfSIAgO3njMPbRzQt6zsBEg45pOkE2XFkVnRgpn6c93TI5DgA1WL4W/DgwboA==",
+  "success": true,
+  "projectFilePath": "D:\\Visual Studio 2019\\repos\\BookStore\\ModelLayer\\ModelLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vaibh\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\vaibh\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\vaibh\\.nuget\\packages\\mongodb.bson\\2.14.1\\mongodb.bson.2.14.1.nupkg.sha512",
+    "C:\\Users\\vaibh\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
