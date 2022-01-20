@@ -30,7 +30,7 @@ namespace BookStore.Controller
                 var ifExists = await this.manager.AddBook(addbook);
                 if(ifExists !=null)
                 {
-                    return this.Ok(new { Status = true, Message = "Book Added Successfully", Data = ifExists });
+                    return this.Ok(new ResponseModel<BooksModel> { Status = true, Message = "Book Added Successfully", Data = ifExists });
                 }
                 else
                 {
@@ -53,7 +53,7 @@ namespace BookStore.Controller
                 var ifExists = await this.manager.UpdateBook(editbook);
                 if (ifExists != null)
                 {
-                    return this.Ok(new { Status = true, Message = "Book Updated Successfully", Data = ifExists });
+                    return this.Ok(new ResponseModel<BooksModel> { Status = true, Message = "Book Updated Successfully", Data = ifExists });
                 }
                 else
                 {
@@ -76,7 +76,7 @@ namespace BookStore.Controller
                 var ifExists = await this.manager.BookImg(bookId, img);
                 if (ifExists != null)
                 {
-                    return this.Ok(new { Status = true, Message = "Image Uploaded Successfully", Data = ifExists });
+                    return this.Ok(new ResponseModel<BooksModel> { Status = true, Message = "Image Uploaded Successfully", Data = ifExists });
                 }
                 else
                 {
@@ -99,7 +99,7 @@ namespace BookStore.Controller
                 var ifExists = await this.manager.DeleteBook(delbook);
                 if (ifExists == true)
                 {
-                    return this.Ok(new { Status = true, Message = "Book Deleted Successfully", Data = ifExists });
+                    return this.Ok(new ResponseModel<BooksModel> { Status = true, Message = "Book Deleted Successfully", Data = ifExists });
                 }
                 else
                 {
