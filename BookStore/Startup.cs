@@ -43,6 +43,9 @@ namespace BookStore
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IUserManager, UserManager>();
 
+            services.AddTransient<IBookRepository, BookRepository>();
+            services.AddTransient<IBookManager, BookManager>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1.0", new OpenApiInfo { Title = "BookStoreApp", Description = "Testing BookStoreApp", Version = "1.0" });
