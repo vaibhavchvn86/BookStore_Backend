@@ -80,3 +80,10 @@ D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\obj\Debug\netcoreapp3.1\Re
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.pdb
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.genruntimeconfig.cache
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Html.Abstractions.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.WebEncoders.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll

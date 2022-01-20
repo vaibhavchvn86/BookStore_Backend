@@ -16,3 +16,4 @@ D:\Visual Studio 2019\repos\BookStore\ModelLayer\obj\Debug\netcoreapp3.1\ModelLa
 D:\Visual Studio 2019\repos\BookStore\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.dll
 D:\Visual Studio 2019\repos\BookStore\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.pdb
 D:\Visual Studio 2019\repos\BookStore\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.genruntimeconfig.cache
+D:\Visual Studio 2019\repos\BookStore\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.csproj.AssemblyReference.cache
