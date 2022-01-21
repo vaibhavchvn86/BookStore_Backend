@@ -7,19 +7,18 @@ using System.Text;
 
 namespace ModelLayer
 {
-    public class CartModel
+    public class WishlistModel
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string cartID { get; set; }
-
-        [ForeignKey("RegisterModel")] 
-        public string userID { get; set; }
-        public virtual RegisterModel RegisterModel { get; set; }
+        public string wishlistID { get; set; }
 
         [ForeignKey("BooksModel")]
         public string bookID { get; set; }
         public virtual BooksModel BooksModel { get; set; }
-        public int quantity { get; set; }
+
+        [ForeignKey("RegisterModel")]
+        public string userID { get; set; }
+        public virtual RegisterModel RegisterModel { get; set; }
     }
 }

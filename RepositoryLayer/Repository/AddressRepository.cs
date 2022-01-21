@@ -47,8 +47,8 @@ namespace RepositoryLayer.Repository
                 {
                     await this.Address.UpdateOneAsync(x => x.addressID == edit.addressID,
                         Builders<AddressModel>.Update.Set(x => x.fullAddress, edit.fullAddress)
-                        .Set(x => x.City, edit.City)
-                        .Set(x => x.State, edit.State)
+                        .Set(x => x.city, edit.city)
+                        .Set(x => x.state, edit.state)
                         .Set(x => x.pinCode, edit.pinCode));
                     return check;
 
@@ -83,7 +83,7 @@ namespace RepositoryLayer.Repository
 
         public async Task<AddressModel> GetByAddressType(string addtypeId)
         {
-            return await this.Address.Find(x => x.addTypeId == addtypeId).FirstOrDefaultAsync();
+            return await this.Address.Find(x => x.addTypeID == addtypeId).FirstOrDefaultAsync();
         }
 
     }
