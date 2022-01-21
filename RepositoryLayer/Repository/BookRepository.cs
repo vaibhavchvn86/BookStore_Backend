@@ -62,8 +62,11 @@ namespace RepositoryLayer.Repository
                         .Set(x => x.dicountPrice, editbook.dicountPrice));
                     return ifExists;
                 }
-                return null;
-
+                else
+                {
+                    await this.Books.InsertOneAsync(editbook);
+                    return editbook;
+                }
             }
             catch (ArgumentNullException e)
             {
