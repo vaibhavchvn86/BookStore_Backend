@@ -91,7 +91,7 @@ namespace BookStore.Controller
         }
 
         [HttpDelete]
-        [Route("deleteimage")]
+        [Route("deletebook")]
         public async Task<IActionResult> DeleteBook(BooksModel delbook)
         {
             try
@@ -99,7 +99,7 @@ namespace BookStore.Controller
                 var ifExists = await this.manager.DeleteBook(delbook);
                 if (ifExists == true)
                 {
-                    return this.Ok(new ResponseModel<BooksModel> { Status = true, Message = "Book Deleted Successfully", Data = ifExists });
+                    return this.Ok(new { Status = true, Message = "Book Deleted Successfully", Data = ifExists });
                 }
                 else
                 {
