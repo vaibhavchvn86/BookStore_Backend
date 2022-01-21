@@ -63,7 +63,7 @@ namespace BookStore.Controller
             }
         }
 
-        [HttpPost]
+        [HttpDelete]
         [Route("deleteaddress")]
         public async Task<IActionResult> DeleteAddress(AddressModel del)
         {
@@ -116,11 +116,11 @@ namespace BookStore.Controller
                 var check = await this.manager.GetByAddressType(addtypeId);
                 if (check != null)
                 {
-                    return this.Ok(new ResponseModel<AddressModel> { Status = true, Message = "Address Deleted Successfully", Data = check });
+                    return this.Ok(new ResponseModel<AddressModel> { Status = true, Message = "Address Retrived Successfully", Data = check });
                 }
                 else
                 {
-                    return this.Ok(new { Status = false, Message = "Address not Deleted" });
+                    return this.Ok(new { Status = false, Message = "Address not Retrived" });
                 }
             }
             catch (Exception e)
