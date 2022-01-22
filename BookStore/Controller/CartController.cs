@@ -1,4 +1,5 @@
 ﻿using ManagerLayer.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer;
 using System;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Controller
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class CartController : ControllerBase
