@@ -1,4 +1,5 @@
 ﻿using ManagerLayer.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Controller
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class BooksController : ControllerBase
@@ -99,7 +101,7 @@ namespace BookStore.Controller
                 var ifExists = await this.manager.DeleteBook(delbook);
                 if (ifExists == true)
                 {
-                    return this.Ok(new ResponseModel<BooksModel> { Status = true, Message = "Book Deleted Successfully", Data = ifExists });
+                    return this.Ok(new ResponseModel<BooksModel> { Status = true, Message = "Book Deleted Successfully"});
                 }
                 else
                 {
