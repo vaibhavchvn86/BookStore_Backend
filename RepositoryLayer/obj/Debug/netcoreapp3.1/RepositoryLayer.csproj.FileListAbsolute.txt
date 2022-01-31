@@ -8,11 +8,15 @@ D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Re
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.runtimeconfig.dev.json
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\DnsClient.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Experimental.System.Messaging.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.DataProtection.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Html.Abstractions.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
@@ -20,6 +24,7 @@ D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Mi
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.WebEncoders.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
@@ -29,6 +34,7 @@ D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Mo
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\SharpCompress.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
@@ -46,6 +52,7 @@ D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Sy
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Xml.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
@@ -80,10 +87,3 @@ D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\obj\Debug\netcoreapp3.1\Re
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.dll
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.pdb
 D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.genruntimeconfig.cache
-D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
-D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Html.Abstractions.dll
-D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
-D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
-D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.WebEncoders.dll
-D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-D:\Visual Studio 2019\repos\BookStore\RepositoryLayer\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll

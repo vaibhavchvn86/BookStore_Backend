@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace BookStore.Controller
 {
-    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class BooksController : ControllerBase
@@ -25,7 +24,7 @@ namespace BookStore.Controller
 
         [HttpPost]
         [Route("addbook")]
-        public async Task<IActionResult> AddBook(BooksModel addbook)
+        public async Task<IActionResult> AddBook([FromBody] BooksModel addbook)
         {
             try
             {
@@ -48,7 +47,7 @@ namespace BookStore.Controller
 
         [HttpPut]
         [Route("updatebook")]
-        public async Task<IActionResult> UpdateBook(BooksModel editbook)
+        public async Task<IActionResult> UpdateBook([FromBody] BooksModel editbook)
         {
             try
             {
@@ -94,7 +93,7 @@ namespace BookStore.Controller
 
         [HttpDelete]
         [Route("deletebook")]
-        public async Task<IActionResult> DeleteBook(BooksModel delbook)
+        public async Task<IActionResult> DeleteBook([FromBody] BooksModel delbook)
         {
             try
             {

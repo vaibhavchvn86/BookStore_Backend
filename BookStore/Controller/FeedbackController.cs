@@ -15,10 +15,14 @@ namespace BookStore.Controller
     public class FeedbackController : ControllerBase
     {
         private readonly IFeedbackManager manager;
+        public FeedbackController(IFeedbackManager manager)
+        {
+            this.manager = manager;
+        }
 
         [HttpPost]
         [Route("addfeedback")]
-        public async Task<IActionResult> AddFeedback(FeedbackModel feed)
+        public async Task<IActionResult> AddFeedback([FromBody] FeedbackModel feed)
         {
             try
             {

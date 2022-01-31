@@ -23,7 +23,7 @@ namespace BookStore.Controller
 
         [HttpPost]
         [Route("addaddress")]
-        public async Task<IActionResult> AddAddress(AddressModel add)
+        public async Task<IActionResult> AddAddress([FromBody] AddressModel add)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace BookStore.Controller
 
         [HttpPut]
         [Route("updateaddress")]
-        public async Task<IActionResult> UpdateAddress(AddressModel edit)
+        public async Task<IActionResult> UpdateAddress([FromBody] AddressModel edit)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace BookStore.Controller
 
         [HttpDelete]
         [Route("deleteaddress")]
-        public async Task<IActionResult> DeleteAddress(AddressModel del)
+        public async Task<IActionResult> DeleteAddress([FromBody] AddressModel del)
         {
             try
             {

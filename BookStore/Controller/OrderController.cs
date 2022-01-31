@@ -15,10 +15,14 @@ namespace BookStore.Controller
     public class OrderController : ControllerBase
     {
         private readonly IOrderManager manager;
+        public OrderController(IOrderManager manager)
+        {
+            this.manager = manager;
+        }
 
         [HttpPost]
         [Route("addorder")]
-        public async Task<IActionResult> AddOrder(OrderModel order)
+        public async Task<IActionResult> AddOrder([FromBody] OrderModel order)
         {
             try
             {
@@ -40,7 +44,7 @@ namespace BookStore.Controller
 
         [HttpDelete]
         [Route("cancleorder")]
-        public async Task<IActionResult> CancleOrder(OrderModel del)
+        public async Task<IActionResult> CancleOrder([FromBody] OrderModel del)
         {
             try
             {

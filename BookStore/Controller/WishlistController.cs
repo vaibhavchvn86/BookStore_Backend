@@ -16,9 +16,14 @@ namespace BookStore.Controller
     {
         private readonly IWishlistManager manager;
 
+        public WishlistController(IWishlistManager manager)
+        {
+            this.manager = manager;
+        }
+
         [HttpPost]
         [Route("addtowishlist")]
-        public async Task<IActionResult> AddToWishlist(WishlistModel wish)
+        public async Task<IActionResult> AddToWishlist([FromBody] WishlistModel wish)
         {
             try
             {
@@ -40,7 +45,7 @@ namespace BookStore.Controller
 
         [HttpDelete]
         [Route("removefromwishlist")]
-        public async Task<IActionResult> RemoveWishlist(WishlistModel del)
+        public async Task<IActionResult> RemoveWishlist([FromBody] WishlistModel del)
         {
             try
             {

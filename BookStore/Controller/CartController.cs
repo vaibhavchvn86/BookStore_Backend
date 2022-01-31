@@ -23,7 +23,7 @@ namespace BookStore.Controller
 
         [HttpPost]
         [Route("addtocart")]
-        public async Task<IActionResult> AddtoCart(CartModel cart)
+        public async Task<IActionResult> AddtoCart([FromBody] CartModel cart)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace BookStore.Controller
 
         [HttpPut]
         [Route("updatequantity")]
-        public async Task<IActionResult> UpdateCartQty(CartModel edit)
+        public async Task<IActionResult> UpdateCartQty([FromBody] CartModel edit)
         {
             try
             {
@@ -66,8 +66,8 @@ namespace BookStore.Controller
         }
 
         [HttpDelete]
-        [Route("updatequantity")]
-        public async Task<IActionResult> RemovefromCart(CartModel del)
+        [Route("deletefromcart")]
+        public async Task<IActionResult> RemovefromCart([FromBody] CartModel del)
         {
             try
             {

@@ -59,7 +59,7 @@ namespace RepositoryLayer.Repository
                         .Set(x => x.authorName, editbook.authorName)
                         .Set(x => x.rating, editbook.rating)
                         .Set(x => x.totalRating, editbook.totalRating)
-                        .Set(x => x.dicountPrice, editbook.dicountPrice));
+                        .Set(x => x.discountPrice, editbook.discountPrice));
                     return ifExists;
                 }
                 else

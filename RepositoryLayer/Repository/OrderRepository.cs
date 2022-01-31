@@ -54,6 +54,7 @@ namespace RepositoryLayer.Repository
 
         public IEnumerable<OrderModel> GetOrder()
         {
+            //Order.Aggregate({ "$project": { "totalPay": { "$multiply": ["$discountPrice", "$quantity"]  } } } );
             return Order.Find(FilterDefinition<OrderModel>.Empty).ToList();
         }
     }
